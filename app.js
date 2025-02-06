@@ -40,3 +40,18 @@ function crearListaAmigos(){
         
     }
 }
+
+//Sortear amigo y mostrar en pantalla
+function sortearAmigo() {
+
+    if ( amigos.length == 0 ){ return; } // Validar que el arreglo amigos no este vacio
+
+    let indiceAleatorio = Math.floor( Math.random() * amigos.length ); // Asignación del indice aleatorio
+
+    let nombreSorteado = amigos[indiceAleatorio]; // Asingnación del nombre aleatorio 
+
+    let resultado = document.getElementById("resultado"); 
+
+    resultado.innerHTML = nombreSorteado; // Mostrar en pantalla el nombre sorteado
+
+}
